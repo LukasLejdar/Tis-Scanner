@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">24dp</dimen>
+    <dimen name="paddingLeft">20dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="smlltextSize">10sp</dimen>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3e82d4</color>
+    <color name="colorPrimaryDark">#3476E7</color>
+    <color name="tabLayout">#2c6cba</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="viewfinder_border">#494c53</color>
+    <color name="viewfinder_laser">#ff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="shadow">#B0B0B0</color>
+    <color name="centerColor">#E6E6E6</color>
+    <color name="grey">#FAFAFA</color>
+    <color name="green">#00C85E</color>
+    <color name="editText">#707070</color>
+    gradient - #3E93D4
+</resources>

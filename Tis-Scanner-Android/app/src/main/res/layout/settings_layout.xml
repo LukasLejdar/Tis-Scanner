@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nastavení"
+                    android:textAlignment="center"
+                    android:padding="24dp"
+                    android:textSize="24sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="User"
+                android:paddingLeft="@dimen/paddingLeft"
+                android:paddingBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/settings1Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:src="@drawable/ic_language_black_30dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/settings1Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/settings1Image"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/paddingLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Languages"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="@dimen/paddingLeft"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Set your language"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smlltextSize"
+                        android:paddingRight="@dimen/paddingLeft"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/settings1Linear"
+                    android:paddingRight="@dimen/paddingLeft"
+                    android:background="@android:color/transparent"
+                    android:text="Menu"
+                    android:textAlignment="viewEnd" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_height="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shadow"/>
+
+            <LinearLayout
+                android:layout_height="10dp"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Developers"
+                android:paddingLeft="@dimen/paddingLeft"
+                android:paddingBottom="4dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/settings3Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:src="@drawable/ic_developer_mode_black_30dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/settings3Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/settings3Image"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/paddingLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="URL"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="@dimen/paddingLeft"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="change url of targeted server    "
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smlltextSize"
+                        android:paddingRight="@dimen/paddingLeft"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/SettingsUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/settings3Linear"
+                    android:textSize="10sp"
+                    android:hint="URL"
+                    android:text="http://192.168.99.7:8080/labContrWs/LabContrWs?wsdl"
+                    android:maxLines="1"
+                    android:scrollY="0dp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/centerColor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/settings4Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:src="@drawable/ic_developer_mode_black_30dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/settings4Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/settings4Image"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/paddingLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="NAME SPACE"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="@dimen/paddingLeft"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="change nm of targeted server   "
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smlltextSize"
+                        android:paddingRight="@dimen/paddingLeft"/>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/settings4Linear"
+                    android:textSize="10sp"
+                    android:hint="URL"
+                    android:text="tis-brno.cz/labContrWs/"
+                    android:maxLines="1"
+                    android:scrollY="0dp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/centerColor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/settings5Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:src="@drawable/ic_developer_mode_black_30dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/settings5Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/settings5Image"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/paddingLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="SOAP"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="@dimen/paddingLeft"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="change soap of targeted server"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/smlltextSize"
+                        android:paddingRight="@dimen/paddingLeft"/>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/settings5Linear"
+                    android:textSize="10sp"
+                    android:hint="URL"
+                    android:text="tis-brno.cz/labContrWs/doBsTest"
+                    android:maxLines="1"
+                    android:scrollX="0dp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_height="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shadow"/>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

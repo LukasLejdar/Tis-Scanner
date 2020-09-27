@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Scanner</string>
+
+    <string name="tab_text_1">Scanner</string>
+    <string name="tab_text_2">Settings</string>
+
+    <string name="napoveda1">Please scan Pacient\'s id card</string>
+    <string name="napoveda2">Please scan blood sac</string>
+    <string name="napoveda3">Confirm blood transfusion</string>
+
+    <string name="Pacient">Name:</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="Continue">continue</string>
+    <string name="passwordInfo">To access settings, you need a password</string>
+    <string name="ToastLanguage">Changes will be applied after application restart</string>
+
+    <string name="Warning">Warning</string>
+    <string name="wrongMatch">Id\'s don\'t match</string>
+    <string name="close">Close application</string>
+
+    <string name="sharedPreferences">sharedPref</string>
+    <string name="language">language</string>
+    <string name="Serverurl">url</string>
+    <string name="password">Heslo</string>
+</resources>

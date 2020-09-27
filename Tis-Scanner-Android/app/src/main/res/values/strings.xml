@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Scanner</string>
+
+    <string name="tab_text_1">Scanner</string>
+    <string name="tab_text_2">Nastavení</string>
+
+    <string name="napoveda1">Naskenujte prosím pacientovu kartičku</string>
+    <string name="napoveda2">Naskenujte prosím vak s krví</string>
+    <string name="napoveda3">Potvrďte podání transfuzi</string>
+
+    <string name="Pacient">Jméno:</string>
+    <string name="confirm">Potvrdit</string>
+
+    <string name="Continue">pokračovat</string>
+    <string name="passwordInfo">K přístupu do nastavení potřebujete \n heslo</string>
+    <string name="ToastLanguage">Změny budou provedeny po restartu aplikace</string>
+
+    <string name="Warning">Pozor</string>
+    <string name="wrongMatch">Nenašli jsme shodu</string>
+    <string name="close">Zavřít aplikaci</string>
+
+    <string name="sharedPreferences">sharedPref</string>
+    <string name="language">language</string>
+    <string name="Serverurl">url</string>
+    <string name="password">Heslo</string>
+</resources>
